@@ -1,3 +1,7 @@
+/* "Modify Programming Project 7 so that it prompts for five quiz grades for each of fives students,
+   then computes the total score and average score for each student, and the average score, high score
+   and low score for each quiz."*/
+
 #include <stdio.h>
 
 #define NR_OF_STUDENTS 2
@@ -11,7 +15,6 @@ int main(void){
     int student, quiz;
    
     // Get user input for student grades.
-    
     for(student=0; student<NR_OF_STUDENTS; student++){
         for(quiz=0; quiz<NR_OF_QUIZZES; quiz++){
             printf("Enter grade for student %d quiz %d: ", student + 1, quiz + 1);
