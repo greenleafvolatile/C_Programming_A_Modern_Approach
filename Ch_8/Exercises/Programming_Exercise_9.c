@@ -38,7 +38,7 @@ int main(void){
     while(grid[array][element]!='Z'){
 
         // Pick a random direction
-        direction=rand()%4;
+        direction=rand() % NR_OF_DIRECTIONS;
 
         // Check if there are possible moves.
         if(directionsExplored[DOWN] && directionsExplored[UP] && directionsExplored[RIGHT] && directionsExplored[LEFT]){
