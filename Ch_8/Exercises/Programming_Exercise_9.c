@@ -18,13 +18,10 @@
 
 int main(void){
     int direction, array=0, element=0;
-
-
     char grid[ARRAYS][ELEMENTS];
     bool directionsExplored[NR_OF_DIRECTIONS]={false};
-
-
-    // Generate seed from rand from system time
+    
+    // Generate seed for rand() from system time
     srand(time(0));
     
     // Initialize the array with '.'
@@ -39,19 +36,19 @@ int main(void){
     grid[array][element]=letter;
 
     while(grid[array][element]!='Z'){
+
         // Pick a random direction
         direction=rand()%4;
 
-
         // Check if there are possible moves.
-        if(directionsExplored[DOWN]==true && directionsExplored[UP]==true && directionsExplored[RIGHT]==true && directionsExplored[LEFT]==true){
+        if(directionsExplored[DOWN] && directionsExplored[UP] && directionsExplored[RIGHT] && directionsExplored[LEFT]){
             printf("Terminated due to no more possible moves!\n");
             break;
         }
         
         if(direction==DOWN){
             if(!directionsExplored[DOWN]){
-                //If a move south was not explored,  check if move south is within grid and would move to empty grid. 
+                //If a move south was not explored, check if move south is within grid and would move to empty grid. 
                 if(array < ARRAYS - 1 && grid[array+1][element]==EMPTY){
                     //move to adjacent cell to the south.
                     array++;
@@ -114,12 +111,11 @@ int main(void){
         letter++;
         grid[array][element]=letter;
 
-        //Moved to new cel. All moves are feasible again so reset movesTried array.
+        //Moved to new cel. All moves are feasible again so reset directionsExplored array.
         for(int i=0;i<NR_OF_DIRECTIONS; directionsExplored[i]=false, i++);
     }
     
     // Print the array to stdout
-    
     for(int i=0;i<ARRAYS;i++){
         for(int j=0;j<ELEMENTS;j++){
             printf("%c", grid[i][j]);
