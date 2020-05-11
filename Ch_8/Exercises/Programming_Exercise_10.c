@@ -1,3 +1,8 @@
+/* "Modify Programming Project 8 from Chapter 5 so that the departure times are stored in an 
+   array and the arrival times are stored in a second array. (The times are integers, representing
+   the number of minutes since mdinight.) The program will use a loop to search the array of 
+   departure times for the one closest to the time entered bythe user."*/
+
 #include <stdio.h>
 
 #define SIZE (int) (sizeof(departureTimes)/sizeof(departureTimes[0]))
