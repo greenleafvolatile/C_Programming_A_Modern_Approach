@@ -1,5 +1,5 @@
 /* "Modify the repdigit.c program of Section 8.1 so that it shows which digits of
-  (if any) were repeated." */
+  (if any) were repeated."*/
 
 #include <stdio.h>
 
