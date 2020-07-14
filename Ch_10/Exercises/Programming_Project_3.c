@@ -10,9 +10,8 @@
 #define CARD_ATTRIBUTES 2
 
 /* external variables */
-int cards_in_hand[NUM_CARDS_IN_HAND][CARD_ATTRIBUTES];
+int cards_in_hand[NUM_CARDS_IN_HAND][CARD_ATTRIBUTES], pairs;
 bool straight, flush, four, three;
-int pairs;
 
 /* prototypes */
 void
@@ -152,7 +151,6 @@ analyze_hand(void) {
     flush = false;
     four = false;
     three = false;
-    pairs = 0;
 
     // Check for flush (five cards of the same suit).
     flush = check_for_flush();
@@ -172,15 +170,12 @@ analyze_hand(void) {
     
     // Check for four-of-a-kind.
     four = check_for_same(ranks_in_hand, 4);
-    printf("Four: %s\n", four ? "true" : "false"); 
 
     // Check for three-of-a-kind.
-    three = check_for_same(ranks_in_hand, 2);
-    printf("Three: %s\n", three ? "true" : "false");
+    three = check_for_same(ranks_in_hand, 3);
 
     // Count number of pairs.
     pairs = count_pairs(ranks_in_hand);
-    printf("Pairs: %d\n", pairs);
 }
 
 bool
