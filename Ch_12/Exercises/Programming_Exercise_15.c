@@ -31,6 +31,7 @@ main(void) {
 
     print_row(temperatures[0], 2);
     return(EXIT_SUCCESS);
+
 }
 
 
