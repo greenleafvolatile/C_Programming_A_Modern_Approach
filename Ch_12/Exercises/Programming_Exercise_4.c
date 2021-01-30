@@ -9,7 +9,6 @@
 
 #define STACK_SIZE 4
 
-
 // Prototypes
 
 void
