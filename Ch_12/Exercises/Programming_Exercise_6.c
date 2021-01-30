@@ -30,15 +30,18 @@ main(void) {
 
 int
 sum_array(const int array[], int size) {
+
     int i, sum = 0;
     for (i = 0; i < size; i++) {
         sum += array[i];
     }
     return sum;
+
 }
 
 int
 sum_array_pointer_arithmetic(int *p, int size) {
+
     int sum = 0;
     int *array_end = p + size;
 
@@ -46,6 +49,7 @@ sum_array_pointer_arithmetic(int *p, int size) {
         sum += *p;
     }
     return sum;
+
 }
 
 
