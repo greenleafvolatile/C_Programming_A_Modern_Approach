@@ -7,13 +7,19 @@
  * *       *                                                               *
  *   *   *                                                                 *
  *     *                                                                   *
+ *                                                                         *
+ * @author: Daan Pol                                                       *
+ * @version: 1.0                                                           *
+ * @since: 24-05-2022                                                      *
  ***************************************************************************/
+// Directives:
 #include <stdio.h>
 
 int
 main(void)
 {
-
+  
+// Ignoring printf(const char * format) return values.
 printf("       %s\n", "*");
 printf("      %s\n", "*");
 printf("     %s\n", "*");
