@@ -20,12 +20,12 @@ main(void)
 {
   
 // Ignoring printf(const char * format) return values.
-printf("       %s\n", "*");
-printf("      %s\n", "*");
-printf("     %s\n", "*");
-printf("%s   %s\n", "*", "*");
-printf(" %s %s\n", "*", "*");
-printf("  %s", "*");
+printf("%15c\n", '*');
+printf("%13c\n", '*');
+printf("%11c\n", '*');
+printf("%c%8c\n", '*', '*');
+printf("%3c%4c\n", '*', '*');
+printf("%5c\n", '*');
 
 return 0;
 }
