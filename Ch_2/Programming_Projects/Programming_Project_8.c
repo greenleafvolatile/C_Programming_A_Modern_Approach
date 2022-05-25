@@ -1,26 +1,49 @@
+/****************************************************************************
+ * Write a program that calculates the ramining balance on a aloan after the*
+ * first, second, and third monthly payments.                               *
+ *                                                                          *
+ * @author Daan Pol                                                         *
+ * @verion 1.0                                                              *
+ * @since 25-05-2022                                                        *
+ * **************************************************************************/
+// Directives:
 #include <stdio.h>
 
-int main(void){
+// Prototypes:
+float
+get_balance(float, float, float);
 
-float loanAmount;
-float interestRate;
-float monthlyPayment;
+int
+main(void) 
+{
 
-printf("Please enter loan amount: ");
-scanf("%f", &loanAmount);
-printf("Please enter interestRate: ");
-scanf("%f", &interestRate);
-printf("Please enter monthly payment: ");
-scanf("%f", &monthlyPayment);
+  float balance, interest_rate, monthly_payment;
 
-float monthlyInterestRate=(interestRate/100)/12;
-float balanceAfterOneMonth=loanAmount+(loanAmount*monthlyInterestRate)-monthlyPayment;
-float balanceAfterTwoMonths=balanceAfterOneMonth+(balanceAfterOneMonth*monthlyInterestRate)-monthlyPayment;
-float balanceAfterThreeMonths=balanceAfterTwoMonths+(balanceAfterTwoMonths*monthlyInterestRate)-monthlyPayment;
-printf("Balance remaining after first payment: %.2f\n", balanceAfterOneMonth);
-printf("Balance remaining after second payment: %.2f\n", balanceAfterTwoMonths);
-printf("Balance remainging after third payment: %.2f\n", balanceAfterThreeMonths);
+  printf("Enter amount of loan: ");
+  scanf("%f", &balance);
 
-return 0;
+  printf("Enter interest rate: ");
+  scanf("%f", &interest_rate);
+
+  printf("Enter monthly payment: ");
+  scanf("%f", &monthly_payment);
+
+  printf("Balance remaining after first payment: %.2f\n", balance = get_balance(balance, interest_rate, monthly_payment));
+  printf("Balance remaining after seocnd payment: %.2f\n", balance = get_balance(balance, interest_rate, monthly_payment));
+  printf("Balance remaining after third payment: %.2f\n", balance = get_balance(balance, interest_rate, monthly_payment));
+
+  return 0;
 }
+
+float
+get_balance(float balance, float interest_rate, float monthly_payment) 
+{
+
+  float interest = balance * (interest_rate / 100.0f) / 12;
+
+  return balance + interest - monthly_payment;
+}
+
+
+
 
