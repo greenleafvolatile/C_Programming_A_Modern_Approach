@@ -1,6 +1,7 @@
 /*****************************************************************
- * Write a program that accepts a date from the user in the form *
- * mm/dd/yyyyy and then display it in the form yyyyy/mm/dd.      *
+ * Progamming Project 1: Write a program that accepts a date     *
+ * from the user in the form mm/dd/yyyyy and then display it in  *
+ * the form yyyyy/mm/dd.                                         *
  *                                                               *
  * @author greenleafvolatile                                     *
  * @version 1.0                                                  *
