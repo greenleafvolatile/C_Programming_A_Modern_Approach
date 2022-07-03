@@ -1,6 +1,6 @@
 /****************************************************************************
- * Write a program that calculates the ramining balance on a aloan after the*
- * first, second, and third monthly payments.                               *
+ * Write a program that calculates the remaining balance on a aloan after   *
+ * the first, second, and third monthly payments.                           *
  *                                                                          *
  * @author Daan Pol                                                         *
  * @verion 1.0                                                              *
