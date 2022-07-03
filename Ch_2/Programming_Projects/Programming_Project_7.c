@@ -3,7 +3,7 @@
  * dollar amount and then shows how to pay that amount using the smallest   *
  * number of $20, $10, $5 and $1 bills.                                     *
  *                                                                          *
- * @author Daan Pol                                                         *
+ * @author greenleafvolatile                                                *
  * @version 1.0                                                             *
  * @since 24-05-2022                                                        *
  * **************************************************************************/

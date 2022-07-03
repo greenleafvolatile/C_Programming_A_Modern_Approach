@@ -2,7 +2,7 @@
  * Programming Project 3: Modify the program of Programming Project 2 so that *
  * it prompts the user to enter the radius of the sphere.                     *
  *                                                                            *
- * @author: Daan Pol                                                          *
+ * @author: greenleafvolatile                                                 *
  * @version: 1.0                                                              *
  * @since: 24-05-2022                                                         *
  ******************************************************************************/

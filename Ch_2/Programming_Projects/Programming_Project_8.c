@@ -2,7 +2,7 @@
  * Write a program that calculates the remaining balance on a aloan after   *
  * the first, second, and third monthly payments.                           *
  *                                                                          *
- * @author Daan Pol                                                         *
+ * @author greenleafvolatile                                                *
  * @verion 1.0                                                              *
  * @since 25-05-2022                                                        *
  * **************************************************************************/

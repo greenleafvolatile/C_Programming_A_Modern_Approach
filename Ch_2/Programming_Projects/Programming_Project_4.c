@@ -2,7 +2,7 @@
  * Programming Project 4: Write a program that asks the user to enter     *
  * a dollars-and-cents amount, then displays the amount with 5% tax added.*
  *                                                                        *
- * @author: Daan Pol                                                      *
+ * @author: greenleafvolatile                                             *
  * @version: 1.0                                                          *
  * @since: 24-05-2022                                                     *
  * ************************************************************************/
