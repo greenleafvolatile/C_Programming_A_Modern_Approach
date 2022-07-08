@@ -124,7 +124,7 @@ main(void)
 Error
 get_date_from_user(int *month, int *day, int *year)
 {
-  int args, expected_number_of_arguments = 3;
+  int args, arguments_assigned = 3;
   
   do {
     
@@ -132,12 +132,12 @@ get_date_from_user(int *month, int *day, int *year)
 
     if (args == EOF) {
       return E_END_OF_FILE;
-    } else if (args != expected_number_of_arguments) {
+    } else if (args != arguments_assigned) {
       printf("Invalid input\n");
       empty_input_buffer();
     } 
 
-  } while (args != expected_number_of_arguments);
+  } while (args != arguments_assigned);
 
   return E_SUCCESS;
 }
@@ -145,7 +145,7 @@ get_date_from_user(int *month, int *day, int *year)
 Error
 get_unit_price_from_user(int *dollars, int *cents)
 {
-  int args, expected_number_of_arguments = 2;
+  int args, arguments_assigned = 2;
 
   do {
 
@@ -153,12 +153,12 @@ get_unit_price_from_user(int *dollars, int *cents)
     
     if (args == EOF) {
       return E_END_OF_FILE;
-    } else if (args != expected_number_of_arguments) {
+    } else if (args != arguments_assigned) {
       printf("Invalid input\n");
       empty_input_buffer();
     } 
 
-  } while (args != expected_number_of_arguments);
+  } while (args != arguments_assigned);
 
   return E_SUCCESS;
 }
@@ -166,7 +166,7 @@ get_unit_price_from_user(int *dollars, int *cents)
 Error
 get_item_number_from_user(int *item_number)
 {
-  int args, expected_number_of_arguments = 1;
+  int args, arguments_assigned = 1;
 
   do {
     
@@ -174,12 +174,12 @@ get_item_number_from_user(int *item_number)
 
     if (args == EOF) {
       return E_END_OF_FILE;
-    } else if (args != expected_number_of_arguments) {
+    } else if (args != arguments_assigned) {
       printf("Invalid input\n");
       empty_input_buffer();
     } 
 
-  } while (args != expected_number_of_arguments);
+  } while (args != arguments_assigned);
 
   return E_SUCCESS;
 }
