@@ -22,7 +22,7 @@
 typedef enum {
   E_SUCCESS,
   E_END_OF_FILE 
-} Error;
+} error;
 
 // Function declarations
 
@@ -46,9 +46,9 @@ print_formatted_product_information(int item_number, int dollars, int cents, int
  *
  *  @param pointer to int variable holding item number value.
  *  
- *  @return Error
+ *  @return error
  */
-Error
+error
 get_item_number_from_user(int *);
 
 /** @brief Gets unit price from a user.
@@ -59,7 +59,7 @@ get_item_number_from_user(int *);
  *
  * @return Errror.
  */
-Error
+error
 get_unit_price_from_user(int *, int *);
 
 /** @brief Gets date from a user (mm/dd/yyyy).
@@ -69,9 +69,9 @@ get_unit_price_from_user(int *, int *);
  * @param pointer to int holding day value.
  * @param pointer to int holding year value.
  *
- * @return Error.
+ * @return error.
  */
-Error
+error
 get_date_from_user(int * , int *, int *);
 
 /** @brief Removes all tokens from input buffer.
@@ -91,7 +91,7 @@ print_error_message();
 int
 main(void)
 {
-  Error error;
+  error error;
 
   int item_number, dollars, cents, month, day, year, args;
   item_number = dollars = cents = month = day = year = args = 0;
@@ -121,7 +121,7 @@ main(void)
 
 }
 
-Error
+error
 get_date_from_user(int *month, int *day, int *year)
 {
   int args, arguments_assigned = 3;
@@ -142,7 +142,7 @@ get_date_from_user(int *month, int *day, int *year)
   return E_SUCCESS;
 }
 
-Error
+error
 get_unit_price_from_user(int *dollars, int *cents)
 {
   int args, arguments_assigned = 2;
@@ -163,7 +163,7 @@ get_unit_price_from_user(int *dollars, int *cents)
   return E_SUCCESS;
 }
 
-Error
+error
 get_item_number_from_user(int *item_number)
 {
   int args, arguments_assigned = 1;
@@ -197,7 +197,7 @@ empty_input_buffer()
 }
 
 void
-print_error_message(Error error)
+print_error_message(error error)
 {
   if (error == E_END_OF_FILE)
     printf("\nUser cancelled input.\n");
