@@ -205,8 +205,6 @@ print_error_message(Error error)
   return;
 }
 
-
-
 void
 print_formatted_product_information(int item_number, int dollars, int cents, int month, int day, int year)
 {
